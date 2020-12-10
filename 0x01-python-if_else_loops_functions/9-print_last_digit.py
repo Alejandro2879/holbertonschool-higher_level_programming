@@ -1,12 +1,10 @@
-#!/usr/bin/env/python3
+#!/usr/bin/env python3
 def print_last_digit(number):
+    cont = number
     if number < 0:
-        new_number = number * -1
-        last = new_number % 10
-        print('{}'.format(last), end='')
-        return last
+        new_number = cont * -1
     else:
-        new_number = number
-        last = new_number % 10
-        print('{}'.format(last), end='')
-        return last
+        new_number = cont
+    last = new_number % 10
+    print(last, end='')
+    return last
