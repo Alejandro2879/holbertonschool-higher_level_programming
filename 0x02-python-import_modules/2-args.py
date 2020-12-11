@@ -6,9 +6,11 @@ counter = 0
 for iter in sys.argv[1:]:
     counter += 1
 
-if counter == 1:
+if counter == 0:
+     print('{} argument.'.format(counter))
+elif counter == 1:
     print('{} argument:'.format(counter))
-else:
+elif counter > 1:
     print('{} arguments:'.format(counter))
 
 counter2 = 0
