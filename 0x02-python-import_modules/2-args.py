@@ -7,7 +7,7 @@ for iter in sys.argv[1:]:
     counter += 1
 
 if counter == 0:
-     print('{} argument.'.format(counter))
+     print('{} arguments.'.format(counter))
 elif counter == 1:
     print('{} argument:'.format(counter))
 elif counter > 1:
