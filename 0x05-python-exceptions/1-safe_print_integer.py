@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 def safe_print_integer(value):
-    ret = 1
+    ret = True
     try:
         print("{:d}".format(value))
-        ret = 1
+        ret = True
     except ValueError:
-        ret = 0
+        ret = False
     return ret
