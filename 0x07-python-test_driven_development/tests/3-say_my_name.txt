@@ -1,0 +1,28 @@
+#!/usr/bin/python3
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+...Test module docstring
+git a
+>>> __import__('3-say_my_name').__doc__ != None
+True
+
+...Tests with only 1 string argument
+
+>>> say_my_name("Steve")
+My name is Steve 
+
+>>> say_my_name("")
+My name is  
+
+...Tests with numbers as arguments
+
+>>> say_my_name(12345)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+>>> say_my_name("Juan", 9876)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+

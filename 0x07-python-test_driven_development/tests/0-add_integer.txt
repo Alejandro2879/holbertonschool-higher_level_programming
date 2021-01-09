@@ -1,0 +1,70 @@
+#!/usr/bin/python3
+>>> add_integer = __import__('0-add_integer').add_integer
+
+>>> __import__("0-add_integer").__doc__ != None
+True
+
+...Test with positive numbers
+
+>>> add_integer(95, 6)
+101
+
+>>> add_integer(0, 0)
+0
+
+>>> add_integer(0)
+98
+
+>>> add_integer(98, 0)
+98
+
+>>> add_integer(67.898753, 3)
+70
+
+...Test with negative numbers
+
+>>> add_integer(-50)
+48
+
+>>> add_integer(-0)
+98
+
+>>> add_integer(-98)
+0
+
+
+...Test with no parameters
+
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+
+...Test with complex numbers
+
+>>> add_integer(5, 5j)
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+>>> add_integer(100, float('inf'))
+Traceback (most recent call last):
+...
+OverflowError: cannot convert float infinity to integer
+
+
+...Test with tuple
+
+>>> add_integer(1567, (358, 23))
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+...Test with list
+
+>>> add_integer([548, "list"], 4398)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
