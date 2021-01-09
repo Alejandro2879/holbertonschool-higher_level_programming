@@ -1,0 +1,23 @@
+#!/usr/bin/python3
+"""
+[summary]
+"""
+
+def say_my_name(first_name, last_name=""):
+        """[Function concatenate: "My name is" with first and
+                second arguments passed to the function]
+
+        Args:
+            first_name (str): [First string passed to the function]
+            last_name (str): [Second string passed to the function]. Defaults to "".
+
+        Raises:
+            TypeError: [If first_name is not a string]
+            TypeError: [If last_name is not a string]
+        """
+
+        if type(first_name) is not str:
+                raise TypeError("first_name must be a string")
+        elif type(last_name) is not str:
+                raise TypeError("last_name must be a string")
+        print("My name is {} {}".format(first_name, last_name))
