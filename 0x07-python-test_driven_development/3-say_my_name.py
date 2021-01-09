@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-[summary]
+[Module define a function that concatenate "My name is" with 2 strings passed as arguments:
+first_name and last_name]
 """
 
 def say_my_name(first_name, last_name=""):
