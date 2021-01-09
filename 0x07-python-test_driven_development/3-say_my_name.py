@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-[Module define a function that concatenate "My name is" with 2 strings passed as arguments:
-first_name and last_name]
+[Module define a function that concatenate "My name is"
+with 2 strings passed as arguments: first_name and last_name]
 """
+
 
 def say_my_name(first_name, last_name=""):
         """[Function concatenate: "My name is" with first and
@@ -10,7 +11,7 @@ def say_my_name(first_name, last_name=""):
 
         Args:
             first_name (str): [First string passed to the function]
-            last_name (str): [Second string passed to the function]. Defaults to "".
+            last_name (str): [Second string passed]. Defaults to "".
 
         Raises:
             TypeError: [If first_name is not a string]
