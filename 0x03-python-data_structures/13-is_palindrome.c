@@ -20,7 +20,6 @@ int is_palindrome(listint_t **head)
 	{
 		buffer[counter] = tmp->n;
 		tmp = tmp->next;
-		printf("%d\n", counter);
 	}
 
 	for (iter = 0; counter > iter; iter++, counter--)
