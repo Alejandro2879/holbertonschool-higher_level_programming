@@ -1,10 +1,10 @@
 #!/usr/bin/python3
->>> baseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
->>> __import__("7-base_geometry").__doc__ != None
+>>> __import__('7-base_geometry').__doc__ != None
 True
 
->>> baseGeometry.__doc__ != None
+>>> BaseGeometry.__doc__ != None
 True
 
 ...Test with positive numbers
