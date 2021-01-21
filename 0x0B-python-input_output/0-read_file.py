@@ -10,4 +10,4 @@ def read_file(filename=""):
         filename (str): [Name of the file to print]. Defaults to "".
     """
     with open('my_file_0.txt', 'r', encoding="utf-8") as my_file:
-        print(my_file.read())
+        print(my_file.read(), end="")
