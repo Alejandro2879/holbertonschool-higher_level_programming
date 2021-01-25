@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-    """[Module define the Square class]
+"""[Module define the Square class]
 
-    Raises:
-        TypeError: [If size is not int]
-        ValueError: [If size is less than 0]
+Raises:
+    TypeError: [If size is not int]
+    ValueError: [If size is less than 0]
 
-    Returns:
-        [Int]: [Area of the square]
-    """
+Returns:
+    [Int]: [Area of the square]
+"""
 
 
 class Square:
