@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""Class square"""
+"""Module define the Square Class"""
 
 
 class Square:
-    """[Class square]
+    """[Class Square]
     """
-
     def __init_(self, size=0):
         self.size = size
 
