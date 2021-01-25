@@ -46,7 +46,7 @@ class Square:
         """[Return the area of the square]
         """
         def area(self):
-                return self.__size
+                return self.__size ** 2
 
         """[Method print area off the square with the '#' char]
         """
@@ -56,5 +56,5 @@ class Square:
                         print()
                 else:
                         print('\n' * self.position[1], end="")
-                        print("\n".join(" " * self.position[0] + '#' *
+                        print("\n".join((" " * self.position[0]) + '#' *
                                         self.size for i in range(self.size)))

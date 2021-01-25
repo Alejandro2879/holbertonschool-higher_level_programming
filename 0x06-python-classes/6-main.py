@@ -14,4 +14,11 @@ print("--")
 my_square_3 = Square(3, (3, 0))
 my_square_3.my_print()
 
+print("---")
+
+my_square_4 = Square(3, (1, 1))
+print(my_square_4.size)
+print(my_square_4.area())
+print(my_square_4.position)
+
 print("--")
