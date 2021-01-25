@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""[Module defien de Square class]
+"""
+
+
 class Square:
         """[class recives a size and compute the area of a square
                 and print it with the '#' character]
