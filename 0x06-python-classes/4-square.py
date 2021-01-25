@@ -1,29 +1,18 @@
 #!/usr/bin/python3
-"""[Module define the Square class]
-
-Raises:
-    TypeError: [If size is not int]
-    ValueError: [If size is less than 0]
-
-Returns:
-    [Int]: [Area of the square]
-"""
+""" Define the Square class"""
 
 
 class Square:
-    """[Class Square]
-    """
-    def __init_(self, size=0):
+    """[Class Square]"""
+    def __init__(self, size=0):
         self.size = size
 
+    """[Getter of size]"""
     @property
-    """[Getter of size]
-    """
     def size(self):
         return self.__size
 
-    """[Setter of size]
-    """
+    """[Setter of size]"""
     @size.setter
     def size(self, size):
         if type(size) is not int:
@@ -32,7 +21,6 @@ class Square:
             raise ValueError("size must be >= 0")
         self.__size = size
 
+    """[Return the area of the square]"""
     def area(self):
-        """[Return the area of the square]
-        """
         return self.__size ** 2
