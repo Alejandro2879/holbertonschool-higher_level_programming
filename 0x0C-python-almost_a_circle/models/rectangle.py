@@ -8,13 +8,15 @@ class Rectangle(Base):
         """[Rectangle class]
 
         Args:
-            Base (Class): [Rectangle class inherit from Base class]
+                Base (Class): [Rectangle class inherit from Base class]
         """
 
         def __init__(self, width, height, x=0, y=0, id=None):
                 """[Define the __init__ method]
                 """
                 Base.__init__(self, id)
+                """[Call the __init__ method of the Base class]
+                """
                 self.width = width
                 self.height = height
                 self.x = x
@@ -22,13 +24,13 @@ class Rectangle(Base):
 
         @property
         def width(self):
-                """[Getter of width]
+                """[Getter method of width]
                 """
                 return self.__width
 
         @width.setter
         def width(self, width):
-                """[Setter of width]
+                """[Setter method of width]
                 """
                 if not isinstance(width, int):
                         raise TypeError("width must be an integer")
@@ -38,13 +40,13 @@ class Rectangle(Base):
 
         @property
         def height(self):
-                """[Getter of height]
+                """[Getter method of height]
                 """
                 return self.__height
 
         @height.setter
         def height(self, height):
-                """[Setter of height]
+                """[Setter method of height]
                 """
                 if not isinstance(height, int):
                         raise TypeError("height must be an integer")
@@ -54,13 +56,13 @@ class Rectangle(Base):
 
         @property
         def x(self):
-                """[Getter of x]
+                """[Getter method of x]
                 """
                 return self.__x
 
         @x.setter
         def x(self, x):
-                """[Setter of x]
+                """[Setter method of x]
                 """
                 if not isinstance(x, int):
                         raise TypeError("x must be an integer")
@@ -70,13 +72,13 @@ class Rectangle(Base):
 
         @property
         def y(self):
-                """[Getter of y]
+                """[Getter method of y]
                 """
                 return self.__y
 
         @y.setter
         def y(self, y):
-                """[Setter of y]
+                """[Setter method of y]
                 """
                 if not isinstance(y, int):
                         raise TypeError("y must be an integer")
