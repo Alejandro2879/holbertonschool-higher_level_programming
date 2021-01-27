@@ -5,10 +5,10 @@ from models.base import Base
 
 
 class Rectangle(Base):
-        """[Rectangle class
+        """[Rectangle class]
 
         Args:
-            Base (Class): [Inherit from Base class]
+            Base (Class): [Rectangle class inherit from Base class]
         """
 
         def __init__(self, width, height, x=0, y=0, id=None):
@@ -20,64 +20,64 @@ class Rectangle(Base):
                 self.x = x
                 self.y = y
 
-        """[Getter of width]
-        """
         @property
         def width(self):
+                """[Getter of width]
+                """
                 return self.__width
 
-        """[Setter of width]
-        """
         @width.setter
         def width(self, width):
+                """[Setter of width]
+                """
                 if not isinstance(width, int):
                         raise TypeError("width must be an integer")
                 elif width <= 0:
                         raise ValueError("width must be > 0")
                 self.__width = width
 
-        """[Getter of height]
-        """
         @property
         def height(self):
+                """[Getter of height]
+                """
                 return self.__height
 
-        """[Setter of height]
-        """
         @height.setter
         def height(self, height):
+                """[Setter of height]
+                """
                 if not isinstance(height, int):
                         raise TypeError("height must be an integer")
                 if height <= 0:
                         raise ValueError("height must be > 0")
                 self.__height = height
 
-        """[Getter of x]
-        """
         @property
         def x(self):
+                """[Getter of x]
+                """
                 return self.__x
 
-        """[Setter of x]
-        """
         @x.setter
         def x(self, x):
+                """[Setter of x]
+                """
                 if not isinstance(x, int):
                         raise TypeError("x must be an integer")
                 elif x < 0:
                         raise ValueError("x must be > 0")
                 self.__x = x
 
-        """[Getter of y]
-        """
         @property
         def y(self):
+                """[Getter of y]
+                """
                 return self.__y
 
-        """[Setter of y]
-        """
         @y.setter
         def y(self, y):
+                """[Setter of y]
+                """
                 if not isinstance(y, int):
                         raise TypeError("y must be an integer")
                 elif y < 0:
