@@ -1,18 +1,13 @@
 #!/usr/bin/python3
-"""[Module define the Rectangle class]
+"""Module define the Rectangle class
 """
 from models.base import Base
 
 
 class Rectangle(Base):
-        """[Rectangle class]
-
-        Args:
-                Base (Class): [Rectangle class inherit from Base class]
-        """
-
+        """Rectangle class inherits from Base class"""
         def __init__(self, width, height, x=0, y=0, id=None):
-                """[Define the __init__ method]
+                """Define the __init__ method
                 """
                 Base.__init__(self, id)
                 """[Call the __init__ method of the Base class]
