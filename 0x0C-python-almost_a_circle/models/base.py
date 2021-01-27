@@ -5,8 +5,11 @@ import json
 
 
 class Base():
-    """[Base class]
-    """
+        """[Base class compute an object from or to JSON]
+
+        Returns:
+            [Json]: [Json object]
+        """
 
     __nb_objects = 0
 
