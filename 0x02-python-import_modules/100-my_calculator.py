@@ -4,15 +4,15 @@ if __name__ == '__main__':
     import sys
 
 
+if len(sys.argv) is not 4:
+    print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+    exit(1)
+
 ops = ['+', '-', '*', '/']
 first_e = int(sys.argv[1])
 second_e = int(sys.argv[3])
 operator = sys.argv[2]
 result = 0
-
-if len(sys.argv) is not 4:
-    print("Usage: ./100-my_calculator.py <a> <operator> <b>")
-    exit(1)
 
 if operator not in ops:
     print("Unknown operator. Available operators: +, -, * and /")
