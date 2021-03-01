@@ -1,2 +1,2 @@
 -- Script delete a database if it exists
-DROP IF EXISTS DATABASE hbtn_0c_0
+DROP DATABASE hbtn_0c_0 IF EXISTS
