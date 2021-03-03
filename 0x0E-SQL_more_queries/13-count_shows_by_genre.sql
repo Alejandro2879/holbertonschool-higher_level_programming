@@ -8,7 +8,7 @@
 -- 7) The database name will be passed as an argument of the mysql command
 SELECT tv_genres.name AS genre, COUNT(tv_shows.genres.genre_id) AS numbers
 FROM tv_genres
-INNER JOIN tv_shows.genres
+INNER JOIN tv_shows_genres
 ON tv_genres.id = tv_shows.genres.genre_id
 GROUP BY tv_shows.genres.genre_id
 ORDER BY numbers DESC;
