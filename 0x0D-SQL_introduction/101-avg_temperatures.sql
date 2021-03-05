@@ -1,5 +1,5 @@
 -- Script import data from a database
-SELECT city, AVG(value) 'av_temp'
+SELECT city, AVG(value) AS 'avg_temp'
 FROM temperatures
 GROUP BY city
-ORDER BY av_temp DESC;
+ORDER BY avg_temp DESC;
