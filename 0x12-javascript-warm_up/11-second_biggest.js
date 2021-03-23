@@ -3,13 +3,12 @@
 let major = parseInt(process.argv[2]);
 let secMajor = parseInt(process.argv[2]);
 
-if (process.argv.length === 2) {
-  console.log(0);
-} else if (process.argv.length === 3) {
-  console.log(0);
-}
-
 function secondMajor () {
+  if (process.argv.length === 2) {
+    console.log(0);
+  } else if (process.argv.length === 3) {
+    console.log(0);
+  }
   if (isNaN(major)) {
     console.log(0);
   }
