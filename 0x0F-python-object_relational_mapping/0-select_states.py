@@ -1,23 +1,25 @@
 #!/usr/bin/python3
-import MySQLdb
-import sys
+if __name__ == '__main__':
 
-db = MySQLdb.connect(
-  host='localhost',
-  port=3306,
-  user=sys.argv[1],
-  passwd=sys.argv[2],
-  db=sys.argv[3]
-)
+    import MySQLdb
+    import sys
 
-cursor = db.cursor()
+    db = MySQLdb.connect(
+      host='localhost',
+      port=3306,
+      user=sys.argv[1],
+      passwd=sys.argv[2],
+      db=sys.argv[3]
+    )
 
-cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
+    cursor = db.cursor()
 
-rows = cursor.fetchall()
+    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
 
-for eachRow in rows:
-    print(eachRow)
+    rows = cursor.fetchall()
 
-cursor.close()
-db.close()
+    for eachRow in rows:
+        print(eachRow)
+
+    cursor.close()
+    db.close()
