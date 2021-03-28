@@ -26,5 +26,5 @@ if __name__ == '__main__':
     for eachRow in rows:
         print(eachRow)
 
-    db.close()
     cursor.close()
+    db.close()
