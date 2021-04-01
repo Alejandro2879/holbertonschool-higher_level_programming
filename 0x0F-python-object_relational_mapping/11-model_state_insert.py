@@ -14,12 +14,10 @@ if __name__ == '__main__':
     Session = sessionmaker()
     session = Session(bind=engine)
 
-    new_state = State(name='Louisiana', id='6')
+    new_state = State(name='Louisiana')
     session.add(new_state)
     session.commit()
 
-    for state in session:
-        if (state.name == new_state.name):
-            print("{}".format(state.id))
+    print(new_state.id)
 
     session.close()
