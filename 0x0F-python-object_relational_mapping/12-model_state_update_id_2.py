@@ -16,3 +16,4 @@ session = Session(bind=engine)
 new_name = session.query(State).filter(State.id == 2).first()
 new_name.name = "New Mexico"
 session.commit()
+session.close()
