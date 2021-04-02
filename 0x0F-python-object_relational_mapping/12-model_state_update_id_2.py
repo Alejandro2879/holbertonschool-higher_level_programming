@@ -13,7 +13,7 @@ if __name__ == '___main__':
 
     Session = sessionmaker()
     session = Session(engine)
-    new_name = session.query(State).filter(State.id == "2").one()
-    new_name.name = "New Mexico"
+    state = session.query(State).filter(State.id == "2").one()
+    state.name = "New Mexico"
     session.commit()
     session.close()
