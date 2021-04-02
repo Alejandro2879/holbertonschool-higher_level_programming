@@ -13,9 +13,9 @@ if __name__ == '___main__':
       sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
 
     Session = sessionmaker()
-    session = Session(bind=engine)
+    session = Session(engine)
 
-    new_name = session.query(State).filter(State.id == "2").one()
+    new_name = session.query(State).filter(State.id == 2).one()
     new_name.name = "New Mexico"
     session.commit()
     session.close()
