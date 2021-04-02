@@ -10,8 +10,9 @@ from model_state import Base, State
 engine = create_engine("mysql+mysqldb://{}:{}@localhost/{}".format(
   sys.argv[1], sys.argv[2], sys.argv[3]), pool_pre_ping=True)
 
-Session = sessionmaker(bind=engine)
+Session = sessionmaker()
+session = Session(bind=engine)
 
-new_name = Session.query(State).filter(State.id == 2).first()
+new_name = session.query(State).filter(State.id == 2).first()
 new_name.name = "New Mexico"
-Session.commit()
+session.commit()
