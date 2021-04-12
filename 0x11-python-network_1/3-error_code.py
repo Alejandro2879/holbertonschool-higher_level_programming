@@ -11,7 +11,7 @@ import urllib.request
 if __name__ == '__main__':
     url = sys.atgv[1]
     try:
-        req = urllib.request.urlopen(url)
+        with urllib.request.urlopen(url) as req:
         my_req = req.read()
         print(page.decode("utf-8"))
     except urllib.error.HTTPError as err:
