@@ -11,5 +11,4 @@ import requests
 if __name__ == '__main__':
     url = sys.argv[1]
     req = requests.get(url)
-    req = req.headers
-    print(req['X-Request-Id'])
+    print(req.headers['X-Request-Id'])
